@@ -202,8 +202,8 @@ class Module extends AbstractionModule
         $c->translator = new \Zend\Mvc\I18n\Translator($i18nTranslator);
     }
 
-	public function getUserConfig()
-	{
-		return include __DIR__ . "/config/user.config.php";
-	}
+    public function getUserConfig()
+    {
+        return include __DIR__ . "/config/user.config.php";
+    }
 }

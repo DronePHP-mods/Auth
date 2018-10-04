@@ -4,7 +4,7 @@ if (!function_exists('ifdef'))
 {
     function ifdef($value, Array $array)
     {
-        $global = __DIR__  . '/../../../config/global.config.php';
+        $global = __DIR__ . '/../../../config/global.config.php';
 
         if (file_exists($global))
         {
@@ -28,7 +28,7 @@ if (!function_exists('ifdef'))
                 if (!$key)
                     return $in;
 
-            } while($key);
+            } while ($key);
         }
         else
             return $value;
