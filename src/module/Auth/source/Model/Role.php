@@ -22,7 +22,7 @@ class Role extends Entity
     public $STATE;
 
     /**
-     * @var date
+     * @var string
      */
     public $RECORD_DATE;
 

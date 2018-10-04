@@ -30,11 +30,6 @@ class LogIn extends AbstractionController
     private $userRoleAdapter;
 
     /**
-     * @var EntityAdapter
-     */
-    private $dbUserRoleAdapter;
-
-    /**
      * @return EntityAdapter
      */
     private function getUserAdapter()
@@ -58,19 +53,6 @@ class LogIn extends AbstractionController
         $this->userRoleAdapter = new EntityAdapter(new TableGateway(new UserRole()));
 
         return $this->userRoleAdapter;
-    }
-
-    /**
-     * @return EntityAdapter
-     */
-    private function getDbUserRoleAdapter()
-    {
-        if (!is_null($this->dbUserRoleAdapter))
-            return $this->dbUserRoleAdapter;
-
-        $this->dbUserRoleAdapter = new EntityAdapter(new TableGateway(new DbUserRole()));
-
-        return $this->dbUserRoleAdapter;
     }
 
     /**

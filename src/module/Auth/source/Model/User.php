@@ -12,7 +12,7 @@ class User extends Entity
     public $TOKEN;
 
     /**
-     * @var date
+     * @var string
      */
     public $RECORD_DATE;
 

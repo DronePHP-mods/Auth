@@ -5,7 +5,6 @@ namespace Auth\Controller;
 use Auth\Model\User;
 use Auth\Model\UserTbl;
 use Drone\Db\TableGateway\EntityAdapter;
-use Drone\Debug\Catcher;
 use Drone\Dom\Element\Form;
 use Drone\Mvc\AbstractionController;
 use Drone\Network\Http;
