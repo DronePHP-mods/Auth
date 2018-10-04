@@ -93,7 +93,7 @@ class SingUp extends AbstractionController
             $http = new Http();
             $http->writeStatus($http::HTTP_METHOD_NOT_ALLOWED);
 
-            die('Error ' . $http::HTTP_METHOD_NOT_ALLOWED .' (' . $http->getStatusText($http::HTTP_METHOD_NOT_ALLOWED) . ')!!');
+            die('Error ' . $http::HTTP_METHOD_NOT_ALLOWED . ' (' . $http->getStatusText($http::HTTP_METHOD_NOT_ALLOWED) . ')!!');
         }
 
         $this->checkSession();
@@ -124,7 +124,7 @@ class SingUp extends AbstractionController
                 $http = new Http();
                 $http->writeStatus($http::HTTP_METHOD_NOT_ALLOWED);
 
-                die('Error ' . $http::HTTP_METHOD_NOT_ALLOWED .' (' . $http->getStatusText($http::HTTP_METHOD_NOT_ALLOWED) . ')!!');
+                die('Error ' . $http::HTTP_METHOD_NOT_ALLOWED . ' (' . $http->getStatusText($http::HTTP_METHOD_NOT_ALLOWED) . ')!!');
             }
 
             # STANDARD VALIDATIONS [check needed arguments]
@@ -247,7 +247,7 @@ class SingUp extends AbstractionController
 
             $this->getUserAdapter()->insert($user);
 
-            $link = $_SERVER["REQUEST_SCHEME"] .'://'. $_SERVER["HTTP_HOST"] . $this->getBasePath() . "/public/Auth/SingUp/verifyEmail/user/" . $post["username"] . "/token/" . $token;
+            $link = $_SERVER["REQUEST_SCHEME"] . '://' . $_SERVER["HTTP_HOST"] . $this->getBasePath() . "/public/Auth/SingUp/verifyEmail/user/" . $post["username"] . "/token/" . $token;
 
             if ($data["mail"])
             {
@@ -338,7 +338,7 @@ class SingUp extends AbstractionController
                 $http = new Http();
                 $http->writeStatus($http::HTTP_METHOD_NOT_ALLOWED);
 
-                die('Error ' . $http::HTTP_METHOD_NOT_ALLOWED .' (' . $http->getStatusText($http::HTTP_METHOD_NOT_ALLOWED) . ')!!');
+                die('Error ' . $http::HTTP_METHOD_NOT_ALLOWED . ' (' . $http->getStatusText($http::HTTP_METHOD_NOT_ALLOWED) . ')!!');
             }
 
             # STANDARD VALIDATIONS [check needed arguments]
@@ -437,7 +437,7 @@ class SingUp extends AbstractionController
             foreach ($errors as $errno => $error)
             {
                 $errorInformation .=
-                    "<strong style='color: #a94442'>".
+                    "<strong style='color: #a94442'>" .
                         $method
                             . "</strong>: <span style='color: #e24f4c'>{$error}</span> \n<br />";
             }
