@@ -11,8 +11,14 @@ use Drone\Util\ArrayDimension;
 
 class Module extends AbstractionModule
 {
+    /**
+     * @var \Zend\I18n\Translator\Translator
+     */
+    private $translator;
+
     public function init(AbstractionController $c)
     {
+        $data = [];
         $config = $this->getUserConfig();
 
         $_config = ArrayDimension::toUnidimensional($config, "_");
