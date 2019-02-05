@@ -19,3 +19,5 @@ function ifdef($value, array $needle)
 ```
 
 Copy the contents of `src` in the root path of your project and try it!.
+
+To close the current session redirects to `Auth/LogOut/close`.

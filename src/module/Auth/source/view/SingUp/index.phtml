@@ -6,7 +6,7 @@
 <h3> <?= $intl->translate('Register form') ?> </h3>
 
 <form id="frm-singup" method="post" data-response="#singup-response" data-role='ajax-request'
-    action="<?= $this->basePath() . '/public/Auth/SingUp/attemp' ?>" autocomplete="off">
+    action="<?= $this->basePath() . '/Auth/SingUp/attemp' ?>" autocomplete="off">
     <div class="form-group">
         <label for="username"><?= $intl->translate("Username") ?></label>
         <div class="input-group">
@@ -52,7 +52,7 @@
     <button class="btn btn-primary" type="submit">
         <i class="fas fa-check"></i> <?= $intl->translate("Register now") ?>
     </button>
-    <a href="<?= $this->basePath() ?>/public/Auth/LogIn" role="button" class="btn btn-default">
+    <a href="<?= $this->basePath() ?>/Auth/LogIn" role="button" class="btn btn-default">
         <i class="fas fa-sign-in-alt"></i> <?= $intl->translate("Log in") ?>
     </a>
 </form><br />

@@ -6,7 +6,7 @@
 <h3> <?= $intl->translate('User login') ?> </h3>
 
 <form id="frm-login" method="post" data-response="#login-response" data-role='ajax-request'
-    action="<?= $this->basePath() . '/public/Auth/LogIn/attemp' ?>">
+    action="<?= $this->basePath() . '/Auth/LogIn/attemp' ?>">
     <div class="form-group">
         <label for="username"><?= $intl->translate('Username') ?></label>
         <div class="input-group">
@@ -28,7 +28,7 @@
     <button class="btn btn-primary" type="submit">
         <i class="fas fa-sign-in-alt"></i> <?= $intl->translate('Log in') ?>
     </button>
-    <a href="<?= $this->basePath() ?>/public/Auth/SingUp" role="button" class="btn btn-default">
+    <a href="<?= $this->basePath() ?>/Auth/SingUp" role="button" class="btn btn-default">
         <i class="fas fa-user-plus"></i> <?= $intl->translate('Register') ?>
     </a>
 </form><br />
