@@ -39,6 +39,6 @@ class LogOut extends AbstractionController
                 break;
         }
 
-        header("location: " . $this->getBasePath() . "/public/Auth");
+        header("location: " . $this->getBasePath() . "/Auth");
     }
 }
